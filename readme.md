@@ -4,7 +4,7 @@ Hello! This is a simple web application for managing libraries. The project is d
 JavaScript, CSS, and Bootstrap.
 
 ## Hocam Bu Not Size:
-Projeyi Replit'e yükledim. Canlı görmek istiyorsanız bana projeyi çalıştır diye mesaj atın 30 saniyemi almaz. Bu [Linke](xx) tıklayarak projemi canlı bir şekilde inceleyebilirsiniz. Teşekkürler.
+Projeyi Replit'e yükledim. Canlı görmek istiyorsanız bana projeyi çalıştır diye mesaj atın 30 saniyemi almaz. Bu [Linke](https://8a408e07-4ad1-4e45-8d8c-131d73246519-00-3qxmmr7pt7365.pike.replit.dev/) tıklayarak projemi canlı bir şekilde inceleyebilirsiniz. Teşekkürler.
 
 ## Features 🌟
 - Add a new **Author**
