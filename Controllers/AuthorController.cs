@@ -22,11 +22,7 @@ namespace LibraryManagement.Controllers
         {
 
             // ID creation (with empty list check)
-            int newAuthorId = 1; // Default ID
-            if (Authors.Any()) // If the list is not empty
-            {
-                newAuthorId = Authors.Max(x => x.Id) + 1;
-            }
+            int newAuthorId = Authors.Any() ? Authors.Max(x => x.Id) + 1 : 1;
 
             var newAuthor = new Author
             {
