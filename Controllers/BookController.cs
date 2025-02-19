@@ -79,14 +79,11 @@ namespace LibraryManagement.Controllers
         private string GetAuthorName(int? authorId)
         {
             if (!authorId.HasValue || authorId.Value <= 0)
-                return "Yazar Seçilmedi";
-            //
+                return "Yazar Bilgisi Eklenmedi";
+
             var author = AuthorController.Authors.FirstOrDefault(a => a.Id == authorId.Value);
-            //
-            if (author == null)
-                return "Yazar Seçilmedi";
-            //
-            return $"{author.FirstName} {author.LastName}";
+
+            return author != null ? $"{author.FirstName} {author.LastName}" : "Yazar Bilgisi Eklenmedi";
         }
 
 

@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\melih\\Desktop\\Patika_week\\week_9\\LibraryManagement\\wwwroot\\img\\anasayfa.png",
+      "PackagePath": "staticwebassets\\img\\anasayfa.png"
+    },
+    {
       "Id": "C:\\Users\\melih\\Desktop\\Patika_week\\week_9\\LibraryManagement\\wwwroot\\img\\favicon.png",
       "PackagePath": "staticwebassets\\img\\favicon.png"
     },

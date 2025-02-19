@@ -301,6 +301,88 @@
       ]
     },
     {
+      "Route": "img/anasayfa.djpc4ske79.png",
+      "AssetFile": "img/anasayfa.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "65063"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SUAJwLUElylj+QFWX1Uyj12M0hnufnJfn5lho2K9tJM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 19 Feb 2025 10:56:44 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "djpc4ske79"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SUAJwLUElylj+QFWX1Uyj12M0hnufnJfn5lho2K9tJM="
+        },
+        {
+          "Name": "label",
+          "Value": "img/anasayfa.png"
+        }
+      ]
+    },
+    {
+      "Route": "img/anasayfa.png",
+      "AssetFile": "img/anasayfa.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "65063"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SUAJwLUElylj+QFWX1Uyj12M0hnufnJfn5lho2K9tJM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 19 Feb 2025 10:56:44 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SUAJwLUElylj+QFWX1Uyj12M0hnufnJfn5lho2K9tJM="
+        }
+      ]
+    },
+    {
       "Route": "img/favicon.hsfn9xby7g.png",
       "AssetFile": "img/favicon.png",
       "Selectors": [],

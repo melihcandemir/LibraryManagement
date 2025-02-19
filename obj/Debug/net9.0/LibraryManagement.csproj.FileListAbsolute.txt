@@ -102,3 +102,4 @@ C:\Users\melih\Desktop\Patika_week\week_9\LibraryManagement\bin\Debug\net9.0\Mic
 C:\Users\melih\Desktop\Patika_week\week_9\LibraryManagement\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
 C:\Users\melih\Desktop\Patika_week\week_9\LibraryManagement\obj\Debug\net9.0\LibraryManagement.csproj.AssemblyReference.cache
 C:\Users\melih\Desktop\Patika_week\week_9\LibraryManagement\obj\Debug\net9.0\LibraryM.685EF3B5.Up2Date
+C:\Users\melih\Desktop\Patika_week\week_9\LibraryManagement\obj\Debug\net9.0\LibraryManagement.sourcelink.json

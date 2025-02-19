@@ -114,7 +114,18 @@ namespace LibraryManagement.Controllers
         public IActionResult DeleteVote(int id)
         {
             var author = Authors.FirstOrDefault(x => x.Id == id);
-            Authors.Remove(author);
+
+            if (author != null)
+            {
+                // yazar kitaplarını kontrol et ve yazar bilgisini sıfırla
+                foreach (var book in BookController.Books.Where(b => b.AuthorId == id))
+                {
+                    book.AuthorId = -1;
+                }
+
+                Authors.Remove(author);
+            }
+
             return RedirectToAction("List");
         }
 

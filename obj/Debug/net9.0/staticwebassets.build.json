@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qLd660FElj0SNh+GBCM0hreryH6La7kfU5RoeA6+tuU=",
+  "Hash": "02yQ7GahFfEhfmeksKWS20r3AVYXg4NIztn+W6hFr70=",
   "Source": "LibraryManagement",
   "BasePath": "_content/LibraryManagement",
   "Mode": "Default",
@@ -1317,6 +1317,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\melih\\Desktop\\Patika_week\\week_9\\LibraryManagement\\wwwroot\\img\\anasayfa.png",
+      "SourceId": "LibraryManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\melih\\Desktop\\Patika_week\\week_9\\LibraryManagement\\wwwroot\\",
+      "BasePath": "_content/LibraryManagement",
+      "RelativePath": "img/anasayfa#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "djpc4ske79",
+      "Integrity": "SUAJwLUElylj+QFWX1Uyj12M0hnufnJfn5lho2K9tJM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\anasayfa.png"
     },
     {
       "Identity": "C:\\Users\\melih\\Desktop\\Patika_week\\week_9\\LibraryManagement\\wwwroot\\img\\favicon.png",
@@ -2938,6 +2959,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y="
+        }
+      ]
+    },
+    {
+      "Route": "img/anasayfa.djpc4ske79.png",
+      "AssetFile": "C:\\Users\\melih\\Desktop\\Patika_week\\week_9\\LibraryManagement\\wwwroot\\img\\anasayfa.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "65063"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SUAJwLUElylj+QFWX1Uyj12M0hnufnJfn5lho2K9tJM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 19 Feb 2025 10:56:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "djpc4ske79"
+        },
+        {
+          "Name": "label",
+          "Value": "img/anasayfa.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SUAJwLUElylj+QFWX1Uyj12M0hnufnJfn5lho2K9tJM="
+        }
+      ]
+    },
+    {
+      "Route": "img/anasayfa.png",
+      "AssetFile": "C:\\Users\\melih\\Desktop\\Patika_week\\week_9\\LibraryManagement\\wwwroot\\img\\anasayfa.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "65063"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SUAJwLUElylj+QFWX1Uyj12M0hnufnJfn5lho2K9tJM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 19 Feb 2025 10:56:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SUAJwLUElylj+QFWX1Uyj12M0hnufnJfn5lho2K9tJM="
         }
       ]
     },
