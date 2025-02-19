@@ -22,11 +22,7 @@ namespace LibraryManagement.Controllers
         public IActionResult Create(BookAddViewModel formData)
         {
             // ID creation (with empty list check)
-            int newBookId = 1; // Default ID
-            if (Books.Any()) // If the list is not
-            {
-                newBookId = Books.Max(x => x.Id) + 1;
-            }
+            int newBookId = Books.Any() ? Books.Max(x => x.Id) + 1 : 1;
 
             var newBook = new Book
             {
