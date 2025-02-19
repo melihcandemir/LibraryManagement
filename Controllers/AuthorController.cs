@@ -6,9 +6,7 @@ namespace LibraryManagement.Controllers
     public class AuthorController : Controller
     {
         // Author list
-        public static List<Author> Authors = new List<Author>()
-        { new Author{ DateOfBirth = new DateTime(2001,07,14), FirstName="Melih", LastName="Can", Id=1}
-        };
+        public static List<Author> Authors = new List<Author>();
 
         // Author creation page call method
         [HttpGet]

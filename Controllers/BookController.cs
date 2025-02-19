@@ -7,9 +7,7 @@ namespace LibraryManagement.Controllers
     public class BookController : Controller
     {
         // Book list
-        public static List<Book> Books = new List<Book>()
-        { new Book { AuthorId = 1, CopiesAvailable = 3, Genre = "Gerilim", Id = 1, ISBN ="978-975-08-0432-1", PublishDate = new DateTime(2021, 1, 1), Title="Deneme"}
-        };
+        public static List<Book> Books = new List<Book>();
 
         // method that calls the page to add a book to the list
         [HttpGet]
