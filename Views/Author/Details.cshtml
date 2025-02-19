@@ -1,0 +1,34 @@
+@model AuthorDetailViewModel
+
+<h6 class="display-6">
+    <mark>@Model.AuthorName</mark> Adlı Yazarın Detayları:
+</h6>
+<hr>
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Yazarın Bilgileri</h5>
+        <p class="card-text">
+            <strong>Doğum Tarihi</strong> @Model.AuthorBirthDate.ToString("dd.MM.yyyy")
+        </p>
+
+        <h5 class="card-title mt-4">Yazarın kitapları</h5>
+        @if (Model.Books != null && Model.Books.Any())
+        {
+            <ul class="list-group">
+                @foreach (var book in Model.Books)
+                {
+                    <li class="list-group-item">@book</li>
+                }
+            </ul>
+        }
+        else
+        {
+            <p class="text-muted">Bu yazarın henüz kitabı bulunmamaktadır.</p>
+        }
+        <hr>
+        <div class="mt-4">
+            <a class="btn btn-warning" asp-controller="Author" asp-action="List">Yazar Listesine Geri Dön</a>
+        </div>
+    </div>
+</div>

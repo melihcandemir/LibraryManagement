@@ -1,0 +1,59 @@
+@model List<BookListViewModel>
+
+
+@if (Model.Count() > 0)
+{
+    <h6 class="display-6">
+        Kitap Listesi - @Model.Count() adet kitap bulunmaktadır
+    </h6>
+    <hr>
+    <table class="table table-hover table-striped">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Kitap Adı</th>
+                <th>Kitap Türü</th>
+                <th>Yazarı</th>
+                <th>Seçenekler</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                // burda yazar listesi numaralarını veriyorum
+                int x = 1;
+            }
+            @foreach (var book in Model)
+            {
+                <tr>
+                    <td class="p-3">@x</td>
+                    <td class="p-3">@book.Title</td>
+                    <td class="p-3">@book.Genre</td>
+                    <td class="p-3">@book.AuthorName</td>
+                    @* <td class="p-3">@book.PublishDate.ToString("dd.mm.yyyy")</td>
+                    <td class="p-3">@book.ISBN</td>
+                    <td class="p-3">@book.CopiesAvailable</td> *@
+                    <td>
+                        <a class="btn btn-warning" asp-controller="Book" asp-action="Details" asp-route-id="@book.Id">
+                            Detaylar
+                        </a>
+                        <a class="btn btn-primary" asp-controller="Book" asp-action="Edit" asp-route-id="@book.Id">Düzenle</a>
+                        <a class="btn btn-danger" asp-controller="Book" asp-action="Delete" asp-route-id="@book.Id">
+                            Sil
+                        </a>
+                    </td>
+                </tr>
+                x++;
+            }
+        </tbody>
+    </table>
+    <a class="btn btn-primary float-end" asp-controller="Book" asp-action="Create">Yeni Kitap Ekle</a>
+}
+else
+{
+    <div class=" alert alert-info mt-5">
+        Kitap bulunmamaktadır. Lütfen yeni kitap ekleyiniz. Kitap ekleme sayfasına gitmek için
+        <a class="alert-link" asp-action="Create">
+            tıklayınız.
+        </a>
+    </div>
+}

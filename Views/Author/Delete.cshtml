@@ -1,0 +1,15 @@
+@model Author
+
+<div class="card">
+    <div class="card-body">
+        <h6 class="display-6">
+            <mark>@Model.FullName</mark> Adlı Yazarı Silmek İstediğinizden Emin Misiniz?
+        </h6>
+        <hr>
+        <form asp-controller="Author" asp-action="DeleteVote">
+            <input type="hidden" asp-for="Id" />
+            <button type="submit" class="btn btn-danger">Sil</button>
+            <a class="btn btn-secondary" asp-controller="Author" asp-action="List">İptal</a>
+        </form>
+    </div>
+</div>

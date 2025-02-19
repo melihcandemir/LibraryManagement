@@ -1,0 +1,15 @@
+@model Book
+
+<div>
+    <h3 class="display-4">Tebrikler!</h3>
+    <hr>
+    <blockquote class="blockquote">
+        <mark>@Model.Title</mark> kitabını başarılı bir şekilde kütüphaneye kaydettiniz.
+    </blockquote>
+    <hr>
+
+    <div class="btn-group">
+        <a class="btn btn-outline-success" asp-controller="Book" asp-action="List">Kitap Listesi</a>
+        <a class="btn btn-success" asp-action="Create" asp-controller="Book">Yeni Kitap Ekle</a>
+    </div>
+</div>

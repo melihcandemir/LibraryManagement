@@ -1,0 +1,29 @@
+@model AuthorAddViewModel
+
+<div class="card mb-3">
+    <div class="card-header">
+        <h1>Yazar Ekleme Formu</h1>
+    </div>
+    <div class="card-body">
+        <form method="post" asp-controller="Author" asp-action="Create">
+            <div class="text-danger" asp-validation-summary="All"></div>
+
+            <div class="from-group my-2">
+                <label asp-for="FirstName">Yazarın Adı</label>
+                <input asp-for="FirstName" class="form-control" required>
+            </div>
+            <div class="from-group my-2">
+                <label asp-for="LastName">Yazarın Soyadı</label>
+                <input asp-for="LastName" class="form-control" required>
+            </div>
+            <div class="from-group my-2">
+                <label asp-for="BirthDate">Yazarın Doğum Tarihi</label>
+                <input type="date" asp-for="BirthDate" class="form-control" required>
+            </div>
+            <div class="float-end">
+                <button class="btn btn-primary" type="submit">Ekle</button>
+                <a class="btn btn-warning" asp-controller="Author" asp-action="List">Yazar Listesi</a>
+            </div>
+        </form>
+    </div>
+</div>

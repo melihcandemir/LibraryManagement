@@ -1,0 +1,28 @@
+@model AuthorEditViewModel
+
+
+<div class="display-6">
+    Yazar Düzenleme Formu
+</div>
+<hr>
+<form method="post" asp-controller="Author" asp-action="Edit">
+    <div class="text-danger" asp-validation-summary="All"></div>
+
+    <input type="hidden" asp-for="Id">
+    <div class="from-group my-2">
+        <label asp-for="FirstName">Yazarın Adı</label>
+        <input asp-for="FirstName" class="form-control" required>
+    </div>
+    <div class="from-group my-2">
+        <label asp-for="LastName">Yazarın Soyadı</label>
+        <input asp-for="LastName" class="form-control" required>
+    </div>
+    <div class="from-group my-2">
+        <label asp-for="BirthDate">Yazarın Doğum Tarihi</label>
+        <input type="date" asp-for="BirthDate" class="form-control" required>
+    </div>
+    <div class="float-end">
+        <button class="btn btn-primary" type="submit">Güncelle</button>
+        <a class="btn btn-warning" asp-controller="Author" asp-action="List">Vazgeç</a>
+    </div>
+</form>

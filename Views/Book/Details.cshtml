@@ -1,0 +1,33 @@
+@model BookDetailViewModel
+
+<h6 class="display-6">
+    <mark>@Model.Title</mark> Adlı Kitabın Detayları:
+</h6>
+
+<hr>
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Kitap Bilgileri</h5>
+        <p class="card-text"></p>
+        <strong>Kitabın Yazarı:</strong> @Model.AuthorName
+        </p>
+        <p class="card-text"></p>
+        <strong>Kitabın Türü:</strong> @Model.Genre
+        </p>
+        <p class="card-text">
+            <strong>Kitabın Yayınlanma Tarihi:</strong> @Model.PublishDate.ToString("dd.MM.yyyy")
+        </p>
+        <p class="card-text">
+            <strong>Kitabın ISBN Numarası:</strong> @Model.ISBN
+        </p>
+        <p class="card-text">
+            <strong>Kitabın Kopya Sayısı:</strong> @Model.CopiesAvailable
+        </p>
+        <hr>
+        <div class="mt-4">
+            <a class="btn btn-warning" asp-controller="Book" asp-action="List">Listeye Geri Dön</a>
+        </div>
+    </div>
+
+</div>

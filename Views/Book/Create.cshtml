@@ -1,0 +1,44 @@
+@model BookAddViewModel
+<div class="card mb-3">
+    <div class="card-header">
+        <h1>Kitap Ekleme Formu</h1>
+    </div>
+    <div class="card-body">
+        <form method="post" asp-asp-controller="Book" asp-action="Create">
+            <div class="text-danger" asp-validation-summary="All"></div>
+
+            <div class="from-group my-2">
+                <label asp-for="Title">Kitap Adı</label>
+                <input asp-for="Title" class="form-control" required>
+            </div>
+            <div class="from-group my-2">
+                <label asp-for="Genre">Kitap Türü</label>
+                <input asp-for="Genre" class="form-control" required>
+            </div>
+            <div class="from-group my-2">
+                <label asp-for="AuthorId">Yazar Seçimi</label>
+                <select asp-for="AuthorId" asp-items="@(new SelectList(AuthorController.Authors, "Id", "FullName"))"
+                    class="form-control">
+                    <option value="0">yazar seç</option>
+                </select>
+            </div>
+            <div class="from-group my-2">
+                <label asp-for="PublishDate">Yayınlanma Tarihi</label>
+                <input type="date" asp-for="PublishDate" class="form-control" required>
+            </div>
+            <div class="from-group my-2">
+                <label asp-for="ISBN">ISBN Numarası</label>
+                <input asp-for="ISBN" class="form-control" required>
+            </div>
+            <div class="from-group my-2">
+                <label asp-for="CopiesAvailable">Kopa Sayısı</label>
+                <input asp-for="CopiesAvailable" class="form-control" required>
+            </div>
+
+            <div class="float-end">
+                <button class="btn btn-primary" type="submit">Ekle</button>
+                <a class="btn btn-warning" asp-controller="Book" asp-action="List">Kitap Listesi</a>
+            </div>
+        </form>
+    </div>
+</div>

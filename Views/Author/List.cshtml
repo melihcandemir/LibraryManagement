@@ -1,0 +1,52 @@
+@model List<AuthorListViewModel>
+
+
+@if (Model.Count() > 0)
+{
+    <h6 class="display-6">
+        Yazar Listesi - @Model.Count() adet yazar bulunmaktadır
+    </h6>
+    <hr>
+    <table class="table table-hover table-striped">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Yazar Adı</th>
+                <th>Sahip Olduğu Kitap Sayısı</th>
+                <th>Seçenekler</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                // burda yazar listesi numaralarını veriyorum
+                int x = 1;
+            }
+            @foreach (var author in Model)
+            {
+                <tr>
+                    <td class="p-3">@x</td>
+                    <td class="p-3">@author.FirstName @author.LastName</td>
+                    <td class="p-3">@author.BookCount</td>
+                    <td>
+                        <a class="btn btn-warning" asp-controller="Author" asp-action="Details"
+                            asp-route-id="@author.Id">Detaylar</a>
+                        <a class="btn btn-primary" asp-controller="Author" asp-action="Edit"
+                            asp-route-id="@author.Id">Düzenle</a>
+                        <a class="btn btn-danger" asp-controller="Author" asp-action="Delete" asp-route-id="@author.Id">Sil</a>
+                    </td>
+                </tr>
+                x++;
+            }
+        </tbody>
+    </table>
+    <a class="btn btn-primary float-end" asp-controller="Author" asp-action="Create">Yeni Yazar Ekle</a>
+}
+else
+{
+    <div class="alert alert-info mt-5">
+        Yazar bulunmamaktadır. Lütfen yeni yazar ekleyiniz. Yazar ekleme sayfasına gitmek için
+        <a class="alert-link" asp-action="Create">
+            tıklayınız.
+        </a>
+    </div>
+}

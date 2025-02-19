@@ -1,0 +1,15 @@
+@model Author
+
+<div>
+    <h3 class="display-4">Tebrikler!</h3>
+    <hr>
+    <blockquote class="blockquote">
+        <mark>@Model.FullName</mark> yazarı başarılı bir şekilde kütüphaneye kaydettiniz.
+    </blockquote>
+    <hr>
+
+    <div class="btn-group">
+        <a class="btn btn-outline-success" asp-controller="Author" asp-action="List">Yazar Listesi</a>
+        <a class="btn btn-success" asp-action="Create" asp-controller="Author">Yeni Yazar Ekle</a>
+    </div>
+</div>
