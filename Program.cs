@@ -16,6 +16,9 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseRouting();
 
+// wwwroot Kullanımı: wwwroot klasöründeki statik dosyaların kullanılmasını sağlayın.
+app.UseStaticFiles();
+
 app.UseAuthorization();
 
 app.MapStaticAssets();
